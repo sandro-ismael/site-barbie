@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie - Movie</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./assets/favicon.png" type="image/x-png">
+
+    <script src="main.js" defer></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span>Margot Robbie</span>
+            <span>Ryan Gosling</span>
+        </header>
+
+        <section class="phrase">
+            <h2>Ela é tudo.</h2>
+            <h2>Ele é só o Ken.</h2>
+        </section>
+
+        <section class="info">
+            <div class="cine">
+                <p>20 De Julho</p>
+                <p>Somente nos cinemas</p>
+            </div>
+            <div class="social">
+                <i class="ph-duotone ph-facebook-logo"></i>
+                <i class="ph-duotone ph-tiktok-logo"></i>
+                <i class="ph-duotone ph-instagram-logo"></i>
+                <i class="ph-duotone ph-twitter-logo"></i>
+            </div>
+
+        </section>
+
+        <section class="buttons">
+            <button>
+                <a href="https://google.com/search?q=barbie" target="_blank">Compre seu Ingresso Já</a>
+            </button>
+
+            <button>
+                <a href="#" id="openModal">Assista ao trailer</a>
+            </button>
+        </section>
+
+        <div id="modalContainer">
+            <iframe id="youtubeIframe" width="1280" height="720"
+                src="https://www.youtube.com/embed/GRyt3Ov4zz0?controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+            <i class="ph-duotone ph-speaker-slash" onclick="mutedAudio()"></i>
+
+            <audio id="music" loop>
+                <source src="./audio/barbie.mp3" type="audio/mpeg">
+            </audio>
+
+            <img src="./assets/Warnerlogo(1).svg" alt="Warner">
+            <img id="scroll" src="./assets/scroll.gif" alt="scroll" width="40px" height="40px">
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
